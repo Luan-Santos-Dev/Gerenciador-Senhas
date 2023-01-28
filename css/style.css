@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 60px 15px 15px 15px;
+}
+
+.fundoescuro {
+    background-color: rgb(248, 3, 3);
+}
+
+.CaixaResultado {
+    display: none;
+    opacity: 0%;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.205);
+    height: 100px;
+    padding: 15px;
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    background-color: rgb(255, 255, 255);
+    transition: 2s all ease;
+}
+
+.aparecer {
+    display: flex;
+    opacity: 100%;
+}
+
+.CaixaResultadoButton {
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    max-height: 590px;
+}
+
+.info-top {
+    position: absolute;
+    top: -300px;
+    /*top: 0px;*/
+    left: 0;
+    width: 100%;
+    padding: 0px 20px;
+    transition: top 1.2s ease;
+}
+
+.descer {
+    top: 0px;
+}
+
+.info-top section {
+    height: 300px;
+    width: 100%;
+}
+
+.info-top section .form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-top section .form button {
+    margin-top: 10px;
+}
+
+.info-top .button-add {
+    border-top: 1px solid white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main {
+    overflow-x: hidden;
+    max-height: 580px;
+}
+
+table thead tr th, table tbody tr th {
+    width: 86.25px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        overflow-x: scroll;
+        max-height: 580px;
+    }
+}
